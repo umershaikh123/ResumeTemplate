@@ -1,4 +1,4 @@
-\documentclass[letterpaper,11pt]{article}
+ \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -16,7 +16,7 @@
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
-\usepackage[margin=1.4cm]{geometry}
+\usepackage[margin=1.2cm]{geometry}
 
 
 \pagestyle{fancy}
@@ -37,8 +37,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -47,7 +47,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{0pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
@@ -95,109 +95,120 @@
 
 %----------HEADING----------
 \begin{center}
-    {\Large \scshape Michael Scott} \\[2mm]
+    {\Large \scshape Muhammad Umer} \\[1.5mm]
     \footnotesize \raisebox{-0.1\height}
-    \faPhone\ \underline{(123) 456-7890} ~ 
-    {\faEnvelope\  \underline{mscott@example.com}} ~ 
-    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/michael-scott/}{linkedin.com/in/michael-scott}}  ~
-    {\faGithub\ \underline{\href{https://github.com/m-scott}{github.com/m-scott}} ~
-    {\faBriefcase\ \underline{\href{https://mscott-portfolio.vercel.app/}{mscott-portfolio.vercel.app/}}
+    {\faEnvelope\  \underline{umershaikh217@gmail.com}} ~
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/muhammad-umer-a725471b3}{linkedin.com/in/muhammad-umer}}  ~
+    {\faGithub\ \underline{\href{https://github.com/umershaikh123}{github.com/umershaikh123}} ~
+    {\faBriefcase\ \underline{\href{https://muhammad-umer-portfolio-23.vercel.app/}{muhammad-umer-portfolio.vercel.app/}}
     \vspace{-8pt}
 \end{center}
 
- %-----------EDUCATION-----------
-\section{Education} \\[1mm]
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University}{Expected Graduation: May 2026}
-      {Bachelor of Computer Engineering | Minor Artificial Intelligence
-      }{Location}
-  \resumeSubHeadingListEnd
-    \resumeItemListStart
-        \resumeItem {Golden Key Honours Scholar | \textbf{GPA: 3.78}}
-        \vspace{-7pt}
-        \resumeItem {Courses: Software Engineering Practice, Applied Machine Learning, Operating Systems, Computer Architecture, Model-Based Programming, Algorithms and Data Structures, Intro. to Software Engineering}
-    \resumeItemListEnd
-    \vspace{-12pt}
 %-----------Experience---------------
 \section{Work Experience}
     \resumeSubHeadingListStart
-                \resumeSubheading{Tech Company}{May 2024 -- Sep 2024}{Machine Learning Engineer Intern}{Location} 
+
+                \resumeSubheading{Raga Finance (formerly Nexus Network)}{Jan 2025 -- Feb 2026}{Web3 Product Engineer}{Remote}
                 \resumeItemListStart
-                    \resumeItem{Engineered \textbf{Large Language Models (LLMs)}, including \textbf{BERT} and \textbf{Attention Models}, to analyze software engineering requirements and generate accurate dependency lists, improving project planning efficiency by \textbf{37\%}}
-                    \resumeItem{Analyzed \textbf{1200+} software requirements monthly using \textbf{scikit-learn (classification models)}, \textbf{spaCy}, and \textbf{NLTK} in \textbf{Python}, saving the company \textbf{\$20,000 annually} by decreasing project lead times}
-                    \resumeItem{Integrated \textbf{TF-IDF vectorization} to detect similarities in software requirements, focusing on \textbf{preprocessing}, \textbf{model training}, \textbf{hyperparameter tuning} and \textbf{clustering} to optimize \textbf{NLP} analysis processes}
-                    \resumeItemListEnd
-            \resumeSubheading{Tech Company}{May 2023 -- Sep 2023}{Backend Engineer Intern}{Location} 
+                    \resumeItem{Architected a \textbf{modular B2B Integration SDK} (Core / React / UI tiers) enabling neobanks to integrate DeFi yields, abstracting transaction simulation and gas estimation into a \textbf{type-safe TypeScript} wrapper with a working demo prototype}
+                    \resumeItem{Built the core \textbf{Vault Investment Dashboard} integrating Hyperliquid and Spectra yield strategies with real-time PnL tracking using \textbf{TanStack Query} and \textbf{Wagmi v2} hooks}
+                    \resumeItem{Developed a \textbf{cross-chain dApp} (L1 $\rightarrow$ Movement / Berachain) and company webapp where users receive yield-bearing nETH/nUSD tokens on bridge, handling the full frontend from \textbf{Figma} prototyping to production}
+                \resumeItemListEnd
+
+                \resumeSubheading{Nexus Network}{Sep 2023 -- Dec 2024}{Web3 Product Engineer}{Remote}
                 \resumeItemListStart
-                    \resumeItem{Designed \textbf{30+ AWS Lambda Functions}, strategically leveraging \textbf{Lambda layers} to increase processing speed by \textbf{35\%} and re-usability by \textbf{52\%}, resulting in cost savings of \textbf{\$1,000} per large scale deployment}
-                    \resumeItem{Implemented \textbf{15+} server less workflows using \textbf{AWS Step Functions}, seamlessly integrating \textbf{REST APIs} and rigorously tested with \textbf{Postman},  resulting in a \textbf{65\%} reduction in execution time and enhanced operational efficiency}
-                    \resumeItem{Crafted a \textbf{Spring Boot} application with a \textbf{Drools} logic engine, containerized it using \textbf{Docker}, and seamlessly deployed it on \textbf{AWS} using \textbf{EC2}, strategically allocating cloud resources to ensure enhanced scalability and reliability}
-                    \resumeItemListEnd
-            \resumeSubheading{Tech Company}{Jun 2022 -- Sep 2022}{Software Engineer Intern}{Location}
-                \resumeItemListStart
-                    \resumeItem{Programmed and deployed a \textbf{Python}-based data migration pipeline on \textbf{Azure}, achieving a \textbf{50\% reduction} in transfer time for \textbf{100+ terabytes} of critical business data}
-                    \resumeItem{Centralized a \textbf{SQL} database infrastructure on \textbf{Azure}, enhancing data accessibility and security for \textbf{50+ stakeholders}, resulting in a \textbf{30\% improvement} in query performance across the organization}
-                    \resumeItemListEnd
+                    \resumeItem{Led frontend architecture for \textbf{5 production Arbitrum Orbit bridges} (L3), customizing the canonical Arbitrum bridge to support \textbf{custom gas tokens} and client-specific branding for partners (Complere, Lysto, O3, Berachain)}
+                    \resumeItem{Owned the full \textbf{product design lifecycle}: prototyped interfaces in \textbf{Figma} and implemented pixel-perfect, responsive UIs using \textbf{Tailwind CSS} and \textbf{shadcn/ui} --- website (v1 + v2), RaaS platform, and dashboards}
+                    \resumeItem{Established \textbf{nexus-packages}, an internal \textbf{Turborepo monorepo} to share UI components and Web3 hooks across multiple bridge deployments, significantly reducing code duplication across products}
+                    \resumeItem{Deployed a \textbf{Uniswap V2 DEX fork} (interface + contracts) on the Nexus Orbit chain to bootstrap decentralized trading and on-chain liquidity}
+                \resumeItemListEnd
+
     \resumeSubHeadingListEnd
-    \vspace{-12pt}
+    \vspace{-14pt}
+
+%-----------HACKATHONS-----------
+\section{Hackathons}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+            {\textbf{{Nexus Network --- ETH Online 2023 \faIcon{trophy}}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{Next.js $|$ Solidity $|$ Figma}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{\textbf{Won} Polygon ``Best LxLy zkEVM Bridge Extension'' out of \textbf{2,000+ participants} and \textbf{515 projects}; built the frontend MVP that directly secured the company's \textbf{\$1M pre-seed} funding round}
+          \resumeItemListEnd
+    \vspace{-20pt}
+
+    \resumeProjectHeading
+            {\textbf{{Super Order --- Unite DeFi 2025 \faIcon{trophy}}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{React $|$ Smart Contracts}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{\textbf{Won} Best DeFi Innovation; built frontend and smart contract integration for an advanced order-type protocol for decentralized trading}
+          \resumeItemListEnd
+    \vspace{-20pt}
+
+    \resumeProjectHeading
+            {\textbf{{GhostVault --- ETH Global 2026}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{Uniswap v4 Hooks $|$ React}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{Uniswap v4 Hook} frontend for MEV-protected limit orders that earn LP yield while pending execution}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-20pt}
 
 %-----------PROJECTS-----------
-\section{Projects} 
+\section{Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
-    \resumeProjectHeading
-            {\textbf{{McGill Scheduler}} $|$ \emph{\href{https://mcgillscheduler.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/McGill-Scheduler}{Source Code}}}{ReactJS $|$ Spring Boot $|$ PostgreSQL}
-            \\[5mm]
-          \resumeItemListStart
-            \resumeItem{Developed and deployed a full-stack web application that enhanced academic experiences of \textbf{1,000+ McGill students}}
-            \resumeItem{Utilized \textbf{PostgreSQL} for data storage, \textbf{Spring Boot} for a \textbf{RESTful API} backend, and \textbf{ReactJS} for the user interface}
-          \resumeItemListEnd
- \vspace{-20pt}
- \resumeProjectHeading
-            {\textbf{{Empor}} $|$ \emph{\href{https://empor.ca/}{Website}}}{NextJS $|$ TypeScript $|$ Spring Boot}
-            \\[5mm]
-          \resumeItemListStart
-            \resumeItem{\textbf{Led the development} of a full-stack marketplace application for \textbf{1,000+ university students}, utilizing \textbf{NextJS} and \textbf{TypeScript} for the frontend, \textbf{Prisma} as the ORM, \textbf{Supabase} for the database, and a \textbf{Spring Boot} backend}
-          \resumeItemListEnd
- \vspace{-17pt}
- \resumeProjectHeading
-{\textbf{{Premier League Match Predictor}} $|$ \emph{\href{https://premierzone.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/PLWebsite}{Source Code}}}{Pandas $|$ Scikit-Learn $|$ Python}
-\\[5mm]
-\resumeItemListStart
-\resumeItem{Created a model to predict matches, integrating \textbf{data scraping} with \textbf{pandas} and \textbf{machine learning} with \textbf{scikit-learn}}
-\resumeItemListEnd
 
-\resumeSubHeadingListEnd
-\vspace{-28pt}
-%-----------LEADERSHIP-----------
-\section{Leadership} 
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-                   \resumeProjectHeading
-            {\textbf{{SWErikCodes}} $|$\emph{{\href{https://www.tiktok.com/@swerikcodes?lang=en}{ TikTok $|$}\href{https://www.youtube.com/channel/UCgKFOz_KrMbmypWrawtzDQg}{ YouTube $|$}\href{https://www.instagram.com/swerikcodes/}{ Instagram}}}}{Jun 2023 -- Present}
-            \\[5mm]
+    \resumeProjectHeading
+            {\textbf{{Multi-Server Queue Simulator}} $|$ \emph{\href{https://github.com/umershaikh123}{Live}{ $|$ }\href{https://github.com/umershaikh123}{Source Code}}}{Next.js $|$ React}
+            \\[3mm]
           \resumeItemListStart
-            \resumeItem{Created educational coding content for \textbf{75,000+} developers, with \textbf{4,200,000+} impressions per month}
-            \resumeItem{Produced coding tutorials on advanced topics such as \textbf{data structures}, \textbf{algorithms}, and \textbf{software design principles}}
+            \resumeItem{Built an interactive \textbf{M/M/C} and \textbf{M/G/C} queuing simulator generating metrics tables (utilization, wait times, queue length) and \textbf{Gantt chart} visualizations}
           \resumeItemListEnd
-          \resumeSubHeadingListEnd
- \vspace{-12pt}
+    \vspace{-20pt}
+
+    \resumeProjectHeading
+            {\textbf{{Compiler Construction}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{JavaScript $|$ Node.js}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Engineered a custom \textbf{3-stage compiler}: lexical analyzer, syntax analyzer with configurable CFG, and semantic analyzer with scope and type checking}
+          \resumeItemListEnd
+    \vspace{-20pt}
+
+    \resumeProjectHeading
+            {\textbf{{OS Scheduling Simulators}} $|$ \emph{\href{https://github.com/umershaikh123}{Live}{ $|$ }\href{https://github.com/umershaikh123}{Source Code}}}{JavaScript $|$ React}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Created browser-based visualizations for \textbf{4 CPU scheduling algorithms} (Round Robin, SRT, SJF, HRRN) with interactive Gantt charts and real-time metrics}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-20pt}
+
   %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{   
-     \textbf{Languages}{: Python, Java, SQL, HTML5, CSS, JavaScript, Go, C, VHDL} \\[1mm]
-     \textbf{Developer Tools}{: AWS, Postman, PowerBI, Git, Azure, Docker, Jira} \\[1mm]
-     \textbf{Libraries/Frameworks}{: Spring Boot, ReactJS, PostgreSQL, NextJS, VueJS, NodeJS} \\ [1mm]
+    \small{\item{
+     \textbf{Frontend}{: React, Next.js (App Router), TypeScript, TanStack Query, Zustand, Redux, Tailwind CSS, shadcn/ui} \\[0.5mm]
+     \textbf{Web3}{: Wagmi v2, Viem, Ethers.js, RainbowKit, Arbitrum Orbit SDK, Hardhat, Solidity (integration-level)} \\[0.5mm]
+     \textbf{Backend \& Data}{: Node.js, Express, Bun, PostgreSQL, REST APIs, The Graph (subgraphs)} \\[0.5mm]
+     \textbf{Tools}{: Figma (UI/UX), Git, Docker, Turborepo, Vercel, GitHub Actions, Linux} \\[0.5mm]
     }}
  \end{itemize}
  \vspace{-16pt}
- \vspace{3pt}
-\vspace{10pt}
 
-\vspace{-15pt}
-
-
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Karachi}{Dec 2020 -- Dec 2024}
+      {Bachelor of Science in Computer Science}{Karachi, Pakistan}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {\textbf{GPA: 3.24 / 4.00} | 3x Hackathon Winner (ETH Online 2023, Unite DeFi 2025, HackUnited) | ETH Global 2026 Participant}
+    \resumeItemListEnd
 
 \end{document}
