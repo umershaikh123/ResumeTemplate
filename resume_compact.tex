@@ -1,0 +1,188 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.2cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+ \addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\LARGE \textbf{\scshape Muhammad Umer}} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    {\faEnvelope\  \underline{umershaikh217@gmail.com}} ~
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/muhammad-umer-a725471b3}{linkedin.com/in/muhammad-umer}}}  ~
+    {\faGithub\ \underline{\href{https://github.com/umershaikh123}{github.com/umershaikh123}}} ~
+    {\faBriefcase\ \underline{\href{https://muhammad-umer-portfolio-23.vercel.app/}{Portfolio}}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROFILE-----------
+\section{Profile}
+\small{Web3 Product Engineer with 2.5 years building DeFi and infrastructure products at a venture-backed startup (\$1M raised). Shipped 5 production Arbitrum Orbit bridges and a modular B2B integration SDK. Specialist in TypeScript, Wagmi/Viem, and modular frontend architecture. Proven ability to own the full product lifecycle---from Figma prototyping to smart contract integration.}
+\vspace{-2pt}
+
+%-----------Experience---------------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+
+                \resumeSubheading{Raga Finance (formerly Nexus Network)}{Jan 2025 -- Feb 2026}{Web3 Product Engineer}{Remote}
+                \resumeItemListStart
+                    \resumeItem{Architected a \textbf{modular B2B Integration SDK} (Core / React / UI tiers) enabling neobanks to integrate DeFi yields, abstracting transaction simulation and gas estimation into a \textbf{type-safe TypeScript} wrapper. Delivered a functional MVP used to demonstrate the integration to potential banking partners.}
+                    \resumeItem{Built the core \textbf{Vault Investment Dashboard} integrating Hyperliquid and Spectra yield strategies with real-time PnL tracking using \textbf{TanStack Query} and \textbf{Wagmi v2} hooks.}
+                    \resumeItem{Developed a \textbf{cross-chain dApp} (L1 $\rightarrow$ Movement / Berachain) and company webapp where users receive yield-bearing nETH/nUSD tokens on bridge, handling the full frontend from \textbf{Figma} prototyping to production.}
+                \resumeItemListEnd
+
+                \resumeSubheading{Nexus Network}{Sep 2023 -- Dec 2024}{Web3 Product Engineer $\cdot$ \normalfont{\small\textit{Joined as founding engineer after securing pre-seed via ETH Online 2023 win}}}{Remote}
+                \resumeItemListStart
+                    \resumeItem{Led frontend architecture for \textbf{5 production Arbitrum Orbit bridges} (L3), customizing the canonical Arbitrum bridge to support \textbf{custom gas tokens} and client-specific branding for partners (Complere, Lysto, O3, Berachain).}
+                    \resumeItem{Owned the full \textbf{product design lifecycle}: prototyped interfaces in \textbf{Figma} and implemented pixel-perfect, responsive UIs using \textbf{Tailwind CSS} and \textbf{shadcn/ui} for the company website (v1 \& v2), the RaaS platform, and internal dashboards.}
+                    \resumeItem{Established \textbf{nexus-packages}, an internal \textbf{Turborepo monorepo} to share UI components and Web3 hooks across multiple bridge deployments, significantly reducing code duplication across products.}
+                    \resumeItem{Deployed a \textbf{Uniswap V2 DEX fork} (interface + contracts) on the Nexus Orbit chain to bootstrap decentralized trading and on-chain liquidity.}
+                \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-6pt}
+
+%-----------HACKATHONS-----------
+\section{Hackathons}
+    \vspace{-3pt}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+            {\textbf{{Nexus Network --- ETH Online 2023 \faIcon{trophy}}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{Next.js $|$ Solidity $|$ Figma}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{\textbf{Won} Polygon ``Best LxLy zkEVM Bridge Extension'' out of \textbf{2,000+ participants} and \textbf{515 projects}; built the frontend MVP that directly secured the company's \textbf{\$1M pre-seed} funding round.}
+          \resumeItemListEnd
+    \vspace{-14pt}
+
+    \resumeProjectHeading
+            {\textbf{{Super Order --- Unite DeFi 2025 \faIcon{trophy}}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{React $|$ Smart Contracts}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{\textbf{Won} Best DeFi Innovation; built frontend and smart contract integration for an advanced order-type protocol for decentralized trading.}
+          \resumeItemListEnd
+    \vspace{-14pt}
+
+    \resumeProjectHeading
+            {\textbf{{GhostVault --- ETH Global 2026}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{Uniswap v4 Hooks $|$ React}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developed a \textbf{Uniswap v4 Hook} frontend for MEV-protected limit orders that earn LP yield while pending execution.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-10pt}
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frontend}{: React, Next.js (App Router), TypeScript, TanStack Query, Zustand, Redux, Tailwind CSS, shadcn/ui} \\[1.5mm]
+     \textbf{Web3}{: Wagmi v2, Viem, Ethers.js, RainbowKit, Arbitrum Orbit SDK, Hardhat, Solidity (integration-level)} \\[1.5mm]
+     \textbf{Backend \& Data}{: Node.js, Express, Bun, PostgreSQL, REST APIs, The Graph (subgraphs)} \\[1.5mm]
+     \textbf{Tools}{: Figma (UI/UX), Git, Docker, Turborepo, Vercel, GitHub Actions, Linux} \\[1.5mm]
+    }}
+ \end{itemize}
+ \vspace{-8pt}
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Karachi}{Dec 2020 -- Dec 2024}
+      {Bachelor of Science in Computer Science}{Karachi, Pakistan}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {\textbf{GPA: 3.24 / 4.00}}
+    \resumeItemListEnd
+
+\end{document}
