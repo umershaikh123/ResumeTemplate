@@ -1,0 +1,210 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.0cm]{geometry}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Muhammad Umer} \\[1.5mm]
+    \footnotesize \raisebox{-0.1\height}
+    {\faEnvelope\  \underline{umershaikh217@gmail.com}} ~
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/muhammad-umer-a725471b3}{linkedin.com/in/muhammad-umer}}}  ~
+    {\faGithub\ \underline{\href{https://github.com/umershaikh123}{github.com/umershaikh123}}} ~
+    {\faBriefcase\ \underline{\href{https://muhammad-umer-portfolio-23.vercel.app/}{Portfolio}}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------Experience---------------
+\section{Work Experience}
+    \resumeSubHeadingListStart
+
+                \resumeSubheading{Raga Finance (formerly Nexus Network)}{Jan 2025 -- Feb 2026}{Founding Engineer}{Remote}
+                \resumeItemListStart
+                    \resumeItem{Architected a modular B2B Integration SDK with Core, React, and UI tiers enabling neobanks to integrate DeFi yields, abstracting transaction simulation and gas estimation into a type-safe TypeScript wrapper backed by a Hono REST API following a routes, handler, controller, repository, and database architecture pattern.}
+                    \resumeItem{Built the core Vault Investment Dashboard integrating Hyperliquid and Spectra yield strategies with real-time PnL tracking, portfolio analytics, and position management using TanStack Query for server state and Wagmi v2 hooks for on-chain data reads.}
+                    \resumeItem{Implemented Alchemy Account Abstraction (ERC-4337) to consolidate multi-step DeFi workflows including token approval, swapping, and vault deposits into single-click batch transactions using EIP-7702 and EIP-5792 via Wagmi hooks, dramatically improving transaction speed and user experience.}
+                    \resumeItem{Integrated Enso Protocol APIs to build reusable token swapping, price quoting, and cross-chain swap routing components, enabling users to access optimal pricing and seamlessly move assets across multiple chains directly within the application interface.}
+                    \resumeItem{Developed a cross-chain dApp bridging L1 to Movement and Berachain where users receive yield-bearing nETH and nUSD tokens, leveraging Ponder for on-chain event indexing and owning the full frontend lifecycle from Figma prototyping through production deployment.}
+                \resumeItemListEnd
+
+                \resumeSubheading{Nexus Network}{Sep 2023 -- Dec 2024}{Founding Engineer $\cdot$ \normalfont{\small\textit{Joined after securing pre-seed via ETH Online 2023 win}}}{Remote}
+                \resumeItemListStart
+                    \resumeItem{Led frontend architecture for 5 production Arbitrum Orbit bridges on L3, customizing the canonical Arbitrum bridge codebase to support custom gas tokens and client-specific branding for ecosystem partners including Complere, Lysto, O3, and Berachain.}
+                    \resumeItem{Owned the full product design lifecycle from wireframing through deployment, prototyping interfaces in Figma and implementing pixel-perfect, responsive UIs using Tailwind CSS and shadcn/ui for the company website (v1 and v2), the RaaS platform, and internal dashboards.}
+                    \resumeItem{Established nexus-packages, an internal Turborepo monorepo housing shared UI components and Web3 hooks across multiple bridge deployments, significantly reducing code duplication and accelerating new bridge setup timelines for partner onboarding.}
+                    \resumeItem{Deployed a Uniswap V2 DEX fork including both the trading interface and smart contracts on the Nexus Orbit chain to bootstrap decentralized trading, liquidity provision, and token swap functionality for the ecosystem.}
+                \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-14pt}
+
+%-----------HACKATHONS-----------
+\section{Hackathons}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+            {\textbf{{Nexus Network, ETH Online 2023 \faIcon{trophy}}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{Next.js $|$ Solidity $|$ Figma}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Won Polygon ``Best LxLy zkEVM Bridge Extension'' out of 2,000+ participants and 515 projects, building the frontend MVP that integrated SSV staking with zkEVM bridging logic and directly secured the company's \$1M pre-seed funding round.}
+          \resumeItemListEnd
+    \vspace{-20pt}
+
+    \resumeProjectHeading
+            {\textbf{{Super Order, Unite DeFi 2025 \faIcon{trophy}}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{React $|$ Smart Contracts}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Won Best DeFi Innovation by building the frontend and smart contract integration for an advanced order-type protocol enabling conditional and limit orders for decentralized trading with real-time order book visualization.}
+          \resumeItemListEnd
+    \vspace{-20pt}
+
+    \resumeProjectHeading
+            {\textbf{{GhostVault, ETH Global 2026}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{Uniswap v4 Hooks $|$ React}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Developed a Uniswap v4 Hook frontend for MEV-protected limit orders that earn LP yield while pending execution, handling hook configuration, order placement, and position tracking interfaces across the application.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-20pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+            {\textbf{{Multi-Server Queue Simulator}} $|$ \emph{\href{https://github.com/umershaikh123}{Live}{ $|$ }\href{https://github.com/umershaikh123}{Source Code}}}{Next.js $|$ React}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Built an interactive M/M/C and M/G/C queuing simulator with configurable server counts, arrival rates, and service time distributions, generating comprehensive metrics tables for utilization, wait times, and queue length alongside dynamic Gantt chart visualizations.}
+          \resumeItemListEnd
+    \vspace{-20pt}
+
+    \resumeProjectHeading
+            {\textbf{{Compiler Construction}} $|$ \emph{\href{https://github.com/umershaikh123}{Source Code}}}{JavaScript $|$ Node.js}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Engineered a custom 3-stage compiler featuring a lexical analyzer with token stream output, a syntax analyzer supporting configurable context-free grammars, and a semantic analyzer performing scope resolution and type checking across nested block structures.}
+          \resumeItemListEnd
+    \vspace{-20pt}
+
+    \resumeProjectHeading
+            {\textbf{{OS Scheduling Simulators}} $|$ \emph{\href{https://github.com/umershaikh123}{Live}{ $|$ }\href{https://github.com/umershaikh123}{Source Code}}}{JavaScript $|$ React}
+            \\[3mm]
+          \resumeItemListStart
+            \resumeItem{Created browser-based visualizations for 4 CPU scheduling algorithms including Round Robin, Shortest Remaining Time, Shortest Job First, and Highest Response Ratio Next, with interactive Gantt charts and real-time performance metrics.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \vspace{-20pt}
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Frontend}{: React, Next.js (App Router), TypeScript, TanStack Query, Zustand, Redux, Tailwind CSS, shadcn/ui} \\[0.5mm]
+     \textbf{Web3}{: Wagmi v2, Viem, Ethers.js, RainbowKit, Account Abstraction (ERC-4337, EIP-7702), EIP-5792, EIP-6963, Arbitrum Orbit SDK, Hardhat, Solidity} \\[0.5mm]
+     \textbf{Backend \& Data}{: Node.js, Express, Hono, Bun, PostgreSQL, REST APIs, The Graph (subgraphs), Ponder} \\[0.5mm]
+     \textbf{Tools}{: Figma (UI/UX), Git, Docker, Turborepo, Vercel, GitHub Actions, Linux} \\[0.5mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Karachi}{Dec 2020 -- Dec 2024}
+      {Bachelor of Science in Computer Science}{Karachi, Pakistan}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {GPA: 3.24 / 4.00}
+    \resumeItemListEnd
+
+\end{document}
